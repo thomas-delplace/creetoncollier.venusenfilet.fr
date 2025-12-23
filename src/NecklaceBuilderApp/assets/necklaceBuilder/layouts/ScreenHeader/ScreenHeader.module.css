@@ -65,9 +65,6 @@
     }
 }
 @media screen and (width<=460px){
-    .screenHeader{
-        
-    }
     .titleContainer{
         flex-direction:column-reverse;
         height:100%;
