@@ -1,0 +1,114 @@
+{
+    "blancetor":{
+        "label":"Blanc & Or",
+        "img":"b_white_l_gold.webp",
+        "alt":"Perles blanches avec lettres dorées",
+        "bead":"blanche",
+        "letter":"or",
+        "infos": {
+            "numbers":true,
+            "special":"*+-&$",
+            "limited":false,
+            "new":true
+        },
+        "active":true
+    },
+    "pastel":{
+        "label":"Pastel",
+        "img":"b_pastel.jpg",
+        "alt":"Perles couleurs pastel avec lettres blanches",
+        "bead":"pastel",
+        "letter":"blanc",
+        "infos": {
+            "numbers":true,
+            "special":false,
+            "limited":false,
+            "new":false
+        },
+        "active":true
+    },
+    "mutedcolours":{
+        "label":"Muted Colours",
+        "img":"b_color_l_gold.jpg",
+        "alt":"Perles en demi-teintes avec lettres dorées",
+        "bead":"muted",
+        "letter":"or",
+        "infos": {
+            "numbers":false,
+            "special":false,
+            "limited":false,
+            "new":false
+        },
+        "active":true
+    },
+    "blackheart":{
+        "label":"Black Hearts",
+        "img":"b_black_hearts.jpg",
+        "alt":"Perles noires en forme de cœur avec lettres blanches",
+        "bead":"blackheart",
+        "letter":"blanc",
+        "infos": {
+            "numbers":false,
+            "special":false,
+            "limited":false,
+            "new":true
+        },
+        "active":true
+    },
+    "noiretor":{
+        "label":"Noir & Or",
+        "img":"b_black_l_gold.webp",
+        "alt":"Perles noires avec lettres dorées",
+        "bead":"noire",
+        "letter":"or",
+        "infos": {
+            "numbers":false,
+            "special":false,
+            "limited":false,
+            "new":false
+        },        
+        "active":true
+    },
+    "hearts":{
+        "label":"Cœurs",
+        "img":"b_hearts.jpg",
+        "alt":"Perles colorées en forme de cœur avec lettres noires",
+        "bead":"hearts",
+        "letter":"noire",
+        "infos": {
+            "numbers":false,
+            "special":false,
+            "limited":false,
+            "new":false
+        },
+        "active":true
+    },
+    "candy":{
+        "label":"Candy",
+        "img":"b_candy.jpg",
+        "alt":"Perles blanches avec lettres colorées",
+        "bead":"candy",
+        "letter":"colour",
+        "infos": {
+            "numbers":false,
+            "special":false,
+            "limited":true,
+            "new":false
+        },
+        "active":true
+    },
+    "classic":{
+        "label":"Classique",
+        "img":"b_white_l_black.webp",
+        "alt":"Perles blanches avec lettres noires",
+        "bead":"blanche",
+        "letter":"noire",
+        "infos": {
+            "numbers":false,
+            "special":false,
+            "limited":false,
+            "new":false
+        },
+        "active":true
+    }
+}

@@ -1,0 +1,14 @@
+.wrapper{
+    height:100svh;
+    display: flex;
+    flex-direction: column;
+    padding:2rem;
+    gap:2rem;
+    place-items: center;
+}
+.wrapper > svg{
+    max-height:300px;
+}
+.wrapper > h3{
+    font-size: 3rem;
+}

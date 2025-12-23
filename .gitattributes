@@ -1,0 +1,27 @@
+* text=auto eol=lf
+
+# Markdown and text files
+*.md text eol=lf
+*.txt text eol=lf
+
+# Source code files
+Dockerfile text eol=lf
+*.dockerfile text eol=lf
+
+# YAML and configuration files
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.json text eol=lf
+
+# Configuration files
+*.env text eol=lf
+.gitignore text eol=lf
+.editorconfig text eol=lf
+.gitattributes text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf

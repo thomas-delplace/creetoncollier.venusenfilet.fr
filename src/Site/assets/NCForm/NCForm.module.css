@@ -1,0 +1,81 @@
+.nc_mainPanel{
+    padding:2rem ;
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+    height:calc(100vh - 6rem);
+    justify-content: stretch;
+}
+.nc_section{
+    margin-bottom:2rem;
+    /* outline:1px solid orange; */
+}
+.nc_tags{
+    height:100%;
+}
+.nc_section > h3{
+    margin-bottom: 0.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:gray;
+}
+.input{
+    background-color:white;
+    color:color-mix(in srgb, var(--cp-blue-2),black 50%);
+    width:100%;
+    min-height:3rem;
+    padding-inline:1rem;
+    font-size: 1.5rem;
+    border:unset;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px -10px var(--cp-blue-2);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.input:is(textarea){
+    padding-top:1rem;
+    display: block;
+    min-height:300px;
+    margin:auto;
+    resize: none;
+}
+.input:focus{
+    outline:unset;
+    box-shadow: -5px 5px 10px -10px var(--cp-blue-2);
+
+}
+.nc_buttons{
+    place-self: flex-end;
+    margin-bottom:0;
+    display: flex;
+}
+.cancelButton,
+.submitButton,
+.submitButtonGrayed{
+    display: grid;
+    place-items: center;
+    padding:1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bold;
+
+}
+.submitButton{
+    background-color:var(--cp-yellow-2);
+    border:unset;
+    border-radius: 0.25rem;
+    width:8rem;
+    cursor:pointer;
+    margin-left: 2rem;
+}
+.submitButton:hover{
+    filter: drop-shadow(5px 5px 10px rgba(0 0 0 / 0.15));
+    background:linear-gradient(-35deg, var(--cp-yellow-2), var(--cp-yellow-1));
+    text-shadow: 0 0 5px rgba(0 0 0 / 0.3);
+}
+.submitButtonGrayed{
+    background-color:#999999;
+    color:#bcbcbc;
+    border:unset;
+    border-radius: 0.25rem;
+    width:8rem;
+    cursor:default;
+    margin-left: 2rem;
+}

@@ -1,0 +1,28 @@
+
+.__selected{
+    cursor:default;
+    /* outline:1px solid black;
+    outline-offset: 3px; */
+    background-color:white;
+    transform:scale(1.1);
+    box-shadow: 0 0 0 5px white;
+    /* outline: 8px solid white; */
+}
+/*  SELECTED  */
+.__selected > div{
+    /* transform: scale(1); */
+    opacity:1;
+}
+.__selected:hover > div{
+    opacity:1;
+    /* transform:scale(1); */
+}
+/*   UNSELECTED   */
+.__unselected > div {
+    /* transform:scale(1); */
+    opacity:1;
+}
+.__unselected:hover{
+    filter:blur(0px);
+    opacity:1;
+}

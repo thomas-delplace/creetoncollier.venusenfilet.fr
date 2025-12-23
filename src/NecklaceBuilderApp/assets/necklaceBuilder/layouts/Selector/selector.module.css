@@ -1,0 +1,116 @@
+.selector{
+    position:absolute;
+    left:100px;
+    top:0;
+    display: flex;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    height:100%;
+    gap:20px;
+    transition-timing-function: ease-in-out;
+    transition-duration:0.15s;
+    /* outline: 1px solid red; */
+}
+@media screen and (width <= 960px){
+    .selector{
+        position:relative;
+        width:auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:1rem;
+    }
+}
+@media screen and (width <= 460px){
+    .selector{
+        position:relative;
+        width:auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+        gap:1rem;
+        overflow:visible;
+    }
+}
+.item{
+    position:relative;
+    float:left;
+    width:auto;
+    height:200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor:pointer;
+    flex-shrink:0;
+}
+
+.infobubble{
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:36px;
+    min-width:36px;
+    background-color:var(--color-1);
+    color:white;
+    font-family: var(--ff-windsong);
+    font-weight: 800;
+    font-size:1.7rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 24px;
+    border:3px solid color-mix( in xyz, var(--color-1) 10%, white);
+    padding:1rem;
+    transform: rotate(20deg) scale(1.1);
+}
+.infobubble > *{
+    height:20px;
+}
+.limited{
+    transform: scale(0.7);
+}
+@media screen and (width <= 960px){
+    .item{
+        width:100%;
+        height:auto;
+        max-width:200px;;
+        max-height: 200px;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-color:white;
+        cursor:unset;
+    }
+    .item:nth-child(odd){
+        justify-self: right;
+    }
+}
+@media screen and (width <= 460px){
+    .item{
+        width:100%;
+        height:auto;
+        max-width:unset;
+        max-height: 500px;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-color:white;
+    }
+}
+.thumbnail{
+    width:100%;
+    aspect-ratio:1;
+    object-fit: cover;
+    clip-path:circle(50%) ;
+
+}
+@media screen and (width <= 960px){
+    .thumbnail{
+        height:100%;
+        aspect-ratio:1;
+        object-fit: cover;
+        grid-area: a;
+    }
+}
+.labelContainer{
+    display: none;
+}

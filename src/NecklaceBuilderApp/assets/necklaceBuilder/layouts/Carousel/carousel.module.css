@@ -1,0 +1,56 @@
+.carouselContainer{
+    width:100%;
+    height:250px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    padding-inline:100px;
+    user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+    /* outline: 1px solid orange; */
+}
+.carouselArrow{
+    position:absolute;
+    display: grid;
+    grid-template-areas: a;
+    justify-content: center;
+    align-content: center;
+    height:100%;
+    width:100px;
+    cursor: pointer;
+    z-index:2;
+    /* outline:1px solid red; */
+}
+
+
+    /*linear-gradient(to right, color-mix(in xyz, var(--color-1) 10%, white)45%, transparent)*/
+.carouselLeftArrow{
+    top:0;
+    left:0;
+    background: linear-gradient(to right, color-mix(in xyz, var(--color-1) 10%, white)45%, transparent);
+}
+.carouselRightArrow{
+    top:0;
+    right:0;
+    background: linear-gradient(to left, color-mix(in xyz, var(--color-1) 10%, white)45%, transparent);
+}
+
+@media screen and (width <= 960px) {
+    .carouselContainer{
+        height:100%;
+        padding-inline:20px;
+        overflow:visible;
+    }
+    
+}
+
+/* @media screen and (width <= 460px) {
+    .carouselContainer{
+        height:100%;
+        padding-inline:20px;
+        overflow:visible;
+    }
+} */

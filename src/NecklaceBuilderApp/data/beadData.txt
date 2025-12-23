@@ -1,0 +1,32 @@
+Pour ajouter un type de perle, il suffit d'ajouter un objet dans le fichier json comme suit:
+(toutes les propriétés sont obligatoires)
+------
+"$":{                                   $ id de la variété de perle, doit être un id unique : aucune autre variété de perle dans le .json ne doit avoir le même id qu'une autre !
+    "label":"$",                        $ Label explicite mais court, sera affiché sur la page de confirmation
+    "img":"/beadTypes/$",               $ Nom du fichier (à fournir en plus) : le nom du fichier doit etre en minuscules sans accent, avec un nom clair et des _ à la place des espaces éventuels. Exemple : "b_hearts.jpg"
+    "alt":"$",                          $ Description courte mais claire du type de chaine. Exemple : "Perles colorées en forme de coeur avec lettres blanches"
+    "bead":"$",                         $ Le type de perle en un mot minuscule sans accent (forme ou couleur ou type de couleur). Exemple : "coeur" / "noire" / "pastel"
+    "letter":"$",                       $ Couleur des lettres en un mot minuscule sans accent. Exemple : "blanc" / "noir" / "or"
+    "infos": {
+        "numbers":$,                    $ Booleen*
+        "special":$,                    $ Boolean/Array**
+        "limited":$                     $ Booleen*
+    },
+    "active":$                          $ Booleen*
+}
+------
+
+
+*   Booleen : true / false
+    Il ne faut pas de guillemets autour des valeurs booléennes.
+
+
+** Type dynamique : la propriété peut avoir deux types de valeurs
+
+    1.  Si les caractères spéciaux ne sont pas disponibles
+        Valeur : false
+        Le type de variable est donc "Boolean"
+
+    2.  Si les caractères sont autorisés
+        Valeur : [*, +, -, &, $] - lister les caractères disponibles dans l'array
+        Le type est donc "Array"

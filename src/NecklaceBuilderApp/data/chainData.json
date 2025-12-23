@@ -1,0 +1,16 @@
+{
+    "chaineArgentee":{
+        "label":"Argentée",
+        "img":"chaine_argentee.jpg",
+        "alt":"chaines argentées",
+        "active": true,
+        "limited": false
+    },
+    "chaineDoree":{
+        "label":"Dorée",
+        "img":"chaine_doree.jpg",
+        "alt":"chaines dorées",
+        "active": true,
+        "limited": false
+    }
+}

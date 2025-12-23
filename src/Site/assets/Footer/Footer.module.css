@@ -1,0 +1,19 @@
+.footerWrapper{
+    /* --bg-color:#7e6978; */
+    --bg-color:#ecdae5;
+    min-height:50vh;
+    background-color:var(--bg-color);
+}
+.footerLine{
+    height: 1px;
+    --bg-opacity:50%;
+    --lg-second-color:#575757;
+    --lg-red:color-mix(in srgb, rgb(255, 0, 0) var(--bg-opacity), var(--lg-second-color));
+    --lg-yellow:color-mix(in srgb, rgb(255, 255, 0) var(--bg-opacity), var(--lg-second-color));
+    --lg-green:color-mix(in srgb, rgb(0, 255, 0) var(--bg-opacity), var(--lg-second-color));
+    --lg-cyan:color-mix(in srgb, rgb(0, 255, 255) var(--bg-opacity), var(--lg-second-color));
+    --lg-blue:color-mix(in srgb, rgb(0, 0, 255) var(--bg-opacity), var(--lg-second-color));
+    --lg-magenta:color-mix(in srgb, rgb(255, 0, 255) var(--bg-opacity), var(--lg-second-color));
+    background:linear-gradient(
+        to right,white,var(--color-2) 30% 70%,white);
+}

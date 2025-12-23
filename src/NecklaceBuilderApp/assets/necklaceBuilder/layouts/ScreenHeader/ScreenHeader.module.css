@@ -1,0 +1,103 @@
+.screenHeader{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    --color-2:color-mix(in hsl,var(--color-1)80%,black);
+}
+/* .screenHeader > *{
+    outline:1px solid red;
+} */
+.titleContainer{
+    flex-grow:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+/* .titleContainer > *{
+    outline:1px solid red;
+} */
+/* .titleContainer svg {
+    max-height:4rem;
+} */
+.leftHeader{
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+/* .leftHeader > *{
+    outline: 1px solid blue;
+} */
+.leftHeader > svg{
+    max-height:2rem;
+}
+.rightHeader > svg{
+    max-height:4rem;
+}
+.titleContainer svg > text{
+    fill:var(--color-2)
+}
+.titleContainer svg > ellipse{
+    stroke:var(--color-2)
+}
+.titleContainer > div {
+    width:30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.subtitle{
+    width:30%;
+    font-size:1.5rem;
+    font-weight:600;
+    color:var(--color-2);
+    flex-grow: 1;
+}
+
+@media screen and (width<=960px){
+    .subtitle{
+        font-size:1.25rem;
+        flex-grow: 0;
+        width:auto;
+    }
+}
+@media screen and (width<=460px){
+    .screenHeader{
+        
+    }
+    .titleContainer{
+        flex-direction:column-reverse;
+        height:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .titleContainer > div{
+        width:100%;
+        justify-content: center;
+    }
+    .leftHeader{
+        justify-content: space-between;
+    }
+    .titleContainer > svg:first-of-type{
+        height:5rem;
+    }
+    .titleContainer > svg:last-of-type{
+        height:9rem;
+        max-height:unset
+    }
+
+
+    .screenHeader:has(.stepNumber){
+        grid-template-columns: 2.5rem 1fr;
+        grid-template-areas:
+        "logo  logo"
+        "count title";
+    }
+    .screenHeader:has(.stepNumber) > .titleContainer{
+        grid-area: title;
+        place-self:end start;
+    }
+}

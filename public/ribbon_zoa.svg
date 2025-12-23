@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="ribbon_zoa.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+     <style>
+     :root{
+      --main:hsl(220deg,70%,50%);
+
+      --front-high:color-mix(in srgb,var(--main),white 30%);
+      --front-low:color-mix(in srgb,var(--main),black 80%);
+
+      --top-high:color-mix(in srgb,var(--main),white 30%);
+      --top-low:color-mix(in srgb,var(--main),black 80%);
+
+      --bottom-low:color-mix(in srgb,var(--main),black 20%);
+      --bottom-high:color-mix(in srgb,var(--main),white 70%);
+
+      --back-low:color-mix(in lab,var(--main),black 90%);
+      --back-high:color-mix(in lab,var(--main),black 50%);
+      overflow:hidden;
+     }
+     </style>
+    <rect
+       x="3296.7297"
+       y="1844.3418"
+       width="1783.043"
+       height="910.90173"
+       id="rect65319" />
+       <!--AVANT-->
+    <linearGradient inkscape:collect="always" id="linearGradient37718">
+      <stop style="stop-color:var(--front-high)" offset="0" id="stop37714" />
+      <stop style="stop-color:var(--front-low)" offset="1" id="stop37716" />
+    </linearGradient>
+
+   <!-- ARRIERE -->
+    <linearGradient inkscape:collect="always" id="linearGradient6492">
+      <stop style="stop-color:var(--back-high)" offset="0" id="stop6488" />
+      <stop style="stop-color:var(--back-low)" offset="1" id="stop6490" />
+    </linearGradient>
+
+    <!-- HAUT -->
+    <linearGradient inkscape:collect="always" id="linearGradient5984">
+      <stop style="stop-color:var(--top-high)" offset="0" id="stop5980" />
+      <stop style="stop-color:var(--top-low)" offset="1" id="stop5982" />
+    </linearGradient>
+
+    <!-- BAS -->
+    <linearGradient inkscape:collect="always" id="linearGradient4517">
+      <stop style="stop-color:var(--bottom-low)" offset="0" id="stop4513" />
+      <stop style="stop-color:var(--bottom-high)" offset="1" id="stop4515" />
+    </linearGradient>
+    <!-- <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter5723"
+       x="-0.0625"
+       y="-1.9678915"
+       width="1.125"
+       height="4.9357829">
+      <feGaussianBlur
+         stdDeviation="100 100"
+         result="blur"
+         id="feGaussianBlur5721" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter6307"
+       x="-0.0625"
+       y="-0.36989874"
+       width="1.125"
+       height="1.7397975">
+      <feGaussianBlur
+         stdDeviation="100 100"
+         result="blur"
+         id="feGaussianBlur6305" />
+    </filter> -->
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient37718"
+       id="linearGradient2556"
+       x1="2075.8066"
+       y1="667.27148"
+       x2="1095.7626"
+       y2="1315.2762"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-715.54849,-98.027636)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5984"
+       id="linearGradient3668"
+       x1="1437.2291"
+       y1="326.98013"
+       x2="2294.8005"
+       y2="685.50549"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-715.54849,-98.027636)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4517"
+       id="bas-gradient"
+       x1="800.8066"
+       y1="1067.2715"
+       x2="2582.8218"
+       y2="1342.6108"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-715.54849,-98.027636)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6492"
+       id="linearGradient6486"
+       x1="1784.379"
+       y1="1312.1857"
+       x2="1475.8066"
+       y2="467.27148"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-715.54849,-98.027636)" />
+    <!-- <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Cross-smooth"
+       id="filter44627"
+       x="-0.037183888"
+       y="-0.036136299"
+       width="1.0743678"
+       height="1.0722727">
+      <feGaussianBlur
+         in="SourceGraphic"
+         stdDeviation="12.4968"
+         result="blur1"
+         id="feGaussianBlur44611" />
+      <feComposite
+         in="blur1"
+         in2="blur1"
+         operator="in"
+         result="composite1"
+         id="feComposite44613" />
+      <feComposite
+         in="composite1"
+         in2="composite1"
+         k2="1.55591"
+         operator="arithmetic"
+         result="composite2"
+         id="feComposite44615"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feColorMatrix
+         in="composite2"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 0 "
+         result="colormatrix1"
+         id="feColorMatrix44617" />
+      <feGaussianBlur
+         stdDeviation="1"
+         result="blur2"
+         id="feGaussianBlur44619" />
+      <feColorMatrix
+         in="blur2"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -1 "
+         result="colormatrix2"
+         id="feColorMatrix44621" />
+      <feBlend
+         in="SourceGraphic"
+         in2="colormatrix2"
+         stdDeviation="17"
+         mode="normal"
+         result="blend"
+         id="feBlend44623" />
+      <feComposite
+         in="blend"
+         in2="colormatrix2"
+         operator="in"
+         result="composite3"
+         id="feComposite44625" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter60864"
+       x="-0.23223197"
+       y="-0.21988685"
+       width="1.4656854"
+       height="1.4409302">
+      <feFlood
+         flood-opacity="0.807843"
+         flood-color="rgb(54,0,104)"
+         result="flood"
+         id="feFlood60854" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite60856" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="77.4107"
+         result="blur"
+         id="feGaussianBlur60858" />
+      <feOffset
+         dx="0.977151"
+         dy="0.977151"
+         result="offset"
+         id="feOffset60860" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite60862" />
+    </filter> -->
+    <!-- <rect
+       x="3296.7297"
+       y="1844.3418"
+       width="1783.043"
+       height="910.90173"
+       id="rect83055" />
+    <rect
+       x="3296.7297"
+       y="1844.3418"
+       width="1783.043"
+       height="910.90173"
+       id="rect99557" />
+    <rect
+       x="3296.7297"
+       y="1844.3418"
+       width="1783.043"
+       height="910.90173"
+       id="rect99559" /> -->
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" style="fill:#040607"/>
+  <g
+     id="g47772"
+     transform="translate(470,150) scale(0.5)">
+    <path
+       style="fill:url(#linearGradient6486);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 560.25811,669.24384 1068.8305,1214.1581 1360.2581,969.24386 760.25811,369.24384 Z"
+       id="arriere"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="haut"
+       style="fill:url(#linearGradient3668);fill-opacity:1;stroke-width:68;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       d="m 760.25811,369.24384 -200,300 799.99999,-100 -100,-200 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:url(#linearGradient2556);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 1260.2585,369.24323 560.25851,969.24326 660.25811,1069.2439 1360.2585,569.24323 Z"
+       id="avant"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="bas"
+       style="fill:url(#bas-gradient);fill-opacity:1;stroke-width:68;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       d="m 560.25811,969.24386 100,100.00004 408.57239,144.9142 291.4276,-244.91424 H 660.25811 Z"
+       sodipodi:nodetypes="cccccc" />
+       </g>
+</svg>

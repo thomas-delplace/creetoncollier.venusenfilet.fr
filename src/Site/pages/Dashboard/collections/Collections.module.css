@@ -1,0 +1,8 @@
+.wrapper{
+    padding:2rem;
+    overflow-y:scroll;
+    height:calc(100vh - 6rem);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}

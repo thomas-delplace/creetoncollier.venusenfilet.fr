@@ -1,0 +1,41 @@
+.wrapper{
+    padding:2rem;
+    overflow-y:scroll;
+    height:calc(100vh - 6rem);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+
+
+.np_section > textarea{
+    padding-top:1rem;
+    display: block;
+    margin:auto;
+    resize: none;
+}
+.np_section > input:focus,
+.np_section > select:focus,
+.np_section > textarea:focus{
+    outline:unset;
+    box-shadow: -5px 5px 10px -10px var(--cp-blue-2);
+
+}
+.productName,
+.productVariant,
+.selector{
+    max-width:300px;
+}
+.productPrice{
+    max-width: 150px;
+    position:relative;
+}
+.productDescription{
+    min-height:300px;
+}
+.productTags{
+    min-height:150px;
+}
+
+

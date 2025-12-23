@@ -1,0 +1,61 @@
+.venusSvg{
+    position:fixed;
+    height:100%;
+    right:0;
+    bottom:0;
+    z-index:0;
+}
+@media screen and (width < 1024px){
+   .venusSvg{
+    position:fixed;
+    height:80%;
+    right:0;
+    bottom:0;
+} 
+}
+
+.venus__corps{
+    fill:white;
+    fill-opacity: 1;
+    stroke:#ffffff;
+    stroke-width:0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+}
+.venus__cordes{
+    fill:white;
+    fill-opacity: 1;
+    stroke:#ffffff;
+    stroke-width:0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+}
+.venus__background{
+    fill:white;
+    fill-opacity: 0.25;
+    stroke:#ffffff;
+    stroke-width:0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+}
+.venus__eyeOpened{
+    fill:white;
+    stroke:none;
+}
+.venus__eyeWink{
+    fill:none;
+    stroke:white;
+    stroke-width:4;
+    stroke-linecap: round;
+}
+@media screen and (width <= 960px){
+    .venusSvg{
+        display:none;
+    }
+}

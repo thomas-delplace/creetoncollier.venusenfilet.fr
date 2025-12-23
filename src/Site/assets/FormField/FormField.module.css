@@ -1,0 +1,170 @@
+
+.mandatory::after{
+    content:" *";
+    color:var(--cp-red-3);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.wrapper{
+    width:100%;
+    display: flex;
+    /* outline:1px solid orangered; */
+}
+.wrapper > h3{
+    margin-bottom: 0.5rem;
+    width:12rem;
+    line-height:3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:gray;
+    flex-grow:0;
+    flex-shrink:0;
+}
+
+.input__text,
+.input__selector,
+.input__textarea{
+    background-color:white;
+    color:color-mix(in srgb, var(--cp-blue-2),black 50%);
+    width:100%;
+    max-width:500px;
+    height:3rem;
+    padding-inline:1rem;
+    font-size: 1rem;
+    border:unset;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px -10px var(--cp-blue-2);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.input__textarea{
+    max-width:900px;
+    padding-block:1rem;
+    height:300px;
+    resize: none;
+}
+
+.input__text::placeholder,
+.input__selector option:disabled{
+    color:#c2c2c2;
+}
+
+.input__text:focus-visible,
+.input__selector:focus-visible,
+.input__textarea:focus-visible{
+    outline:unset;
+    box-shadow: -5px 5px 10px -10px var(--cp-blue-2);
+}
+
+
+.fileInputContainer{
+    width:200px;
+    height:200px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "a";
+}
+.fileInputContainer > *{
+    grid-area: a;
+}
+.fileInputImage{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    z-index:0;
+}
+.fileInput{
+    width:200px;
+    height:200px;
+    align-content: center;
+    color:transparent;
+    z-index:1;
+    background-color: color-mix(in srgb, var(--pattern-color), transparent);
+}
+.fileInput::file-selector-button{
+    width:200px;
+    height:200px;
+    align-content: center;
+    opacity: 0;
+    cursor: pointer;
+}
+.fileInput:hover{
+    background-color: color-mix(in srgb, var(--pattern-color), transparent 60%);
+}
+
+.pictureContainer{
+    /* outline:1px solid orangered; */
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.uploadedPictureContainer{
+    width:200px;
+    height:200px;
+    position:relative;
+}
+.uploadedPictureContainer > button{
+    position:absolute;
+    right:12px;
+    top:12px;
+    background-color: var(--cp-red-1);
+    outline:2px solid white;
+    border:unset;
+    border-radius: 2px;
+    display: grid;
+    place-items: center;
+    opacity:0;
+    cursor:pointer;
+}
+.uploadedPictureContainer:hover > button{
+    opacity:1;
+}
+.uploadedPictureContainer:hover > img{
+    opacity:0.8;
+}
+.uploadedPictureContainer > button:hover{
+    transform:scale(1.1);
+}
+.uploadedPictureContainer > button > svg{
+    fill:white
+}
+.uploadedPicture{
+    width:200px;
+    height:200px;
+    border-radius:12px;
+    object-fit: cover;
+}
+
+
+
+.emptySpaceLeft{
+    width:12rem;
+}
+.button__unavailable{
+    border:unset;
+    border-radius: 0.5rem;
+    height:3rem;
+    min-width:10rem;
+    padding-inline:2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:1.125rem;
+    font-weight: 600;
+    background:#999999;
+    cursor:default;
+}
+.button__available{
+    border:unset;
+    border-radius: 0.5rem;
+    height:3rem;
+    min-width:10rem;
+    padding-inline:2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:1.125rem;
+    font-weight: 600;
+    background:linear-gradient(45deg, var(--cp-orange-2), var(--cp-yellow-2));
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 0.5);
+    cursor:pointer;
+}
+.button__available:hover{
+    transform:scale(1.025)
+}

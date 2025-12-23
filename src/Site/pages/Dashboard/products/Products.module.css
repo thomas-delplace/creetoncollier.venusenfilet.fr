@@ -1,0 +1,130 @@
+.wrapper{
+    padding:2rem;
+    overflow-y:scroll;
+    height:calc(100vh - 6rem);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+
+.productGroup{
+    /* background:linear-gradient(to bottom, var(--cp-blue-3), transparent 50%); */
+    box-shadow: 0px 0px 20px -7.5px rgba(0 0 0 / 0.25);
+    border-radius: 1.5rem;
+    padding:1rem;
+}
+.productGroupHeader{
+    width:100%;
+    padding:1rem;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap:0.5rem;
+    /* background-color:color-mix(in srgb, var(--cp-blue-2) , white 50%); */
+}
+.descriptionZone{
+    padding:1rem;
+    width:50%;
+    color:#adadad;
+}
+.productGroupHeader > h3{
+    width:100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.productGroupHeader > .editButton,
+.productGroupHeader > .viewButton,
+.productGroupHeader > .deleteButton{
+    fill:color-mix(in srgb, var(--cp-blue-2) , black 50%);
+}
+.productGroupHeader > .editButton:hover,
+.productGroupHeader > .viewButton:hover,
+.productGroupHeader > .deleteButton:hover{
+    opacity: 0.5;
+}
+.productGroupBody{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    padding:0.5rem;
+}
+.productGroupBody > h4{
+    display: inline-block;
+    margin-left:2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:color-mix(in srgb, var(--cp-blue-2) , black 50%);
+}
+.variantHeaderRow{
+    padding-inline:0.5rem;
+    display: flex;
+    justify-content: stretch;
+    align-items:center;
+    gap:0.5rem;
+    color:var(--cp-blue-2);
+    font-size: 0.625rem;
+}
+.variantRow{
+    padding:0.5rem;
+    display: flex;
+    justify-content: stretch;
+    align-items:center;
+    gap:0.5rem;
+    background-color:white;
+    border-radius: 1rem;
+}
+.variantRow > *{
+
+    /* outline:1px solid red; */
+}
+.variantId{
+    width:40px;
+}
+.variantName{
+    width:100%;
+}
+.variantPrice{
+    width:100px;
+}
+.variantStock{
+    width:100px;
+}
+
+.editButton,
+.viewButton,
+.deleteButton {
+    width:24px;
+    fill:#999999;
+    cursor:pointer;
+    display: flex;
+}
+.editButton > svg:hover,
+.viewButton > svg:hover,
+.deleteButton > svg:hover {
+    fill:color-mix(in srgb, var(--cp-blue-2) , black 50%);
+}
+
+
+.np_section{
+    display: flex;
+}
+
+
+.np_section > h3{
+    margin-bottom: 0.5rem;
+    width:12rem;
+    line-height:3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:gray;
+    flex-grow:0;
+    flex-shrink:0;
+}
+.mandatory::after{
+    content:" *";
+    color:var(--cp-red-3);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
