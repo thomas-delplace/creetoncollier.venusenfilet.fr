@@ -1,4 +1,3 @@
-import css from './necklaceBuilder.module.css'
 import { PreviousButton, NextButton } from './layouts/buttons/buttons'
 import { Dialog, DialogHeader, DialogBody, DialogFooter } from './layouts/dialog/dialog'
 import { useStep } from '../../context/StepContext'

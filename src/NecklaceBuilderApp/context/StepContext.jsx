@@ -22,11 +22,12 @@ const StepProvider = ({ children }) => {
 }
 
 const useStep = () => {
+    const context = useContext(StepContext)
     try {
-        if(!useContext(StepContext)){
+        if(!context){
                 throw new Error('useStep must be used inside a StepProvider')
         }
-        return useContext(StepContext)
+        return context
     } catch (error) {
         console.error(error)
     }

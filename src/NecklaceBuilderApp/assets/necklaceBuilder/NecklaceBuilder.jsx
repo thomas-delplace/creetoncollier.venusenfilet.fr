@@ -6,9 +6,8 @@ import BeadScreen from './BeadScreen'
 import MessageScreen from './MessageScreen'
 import InfosFormScreen from "./InfosFormScreen"
 import VerificationScreen from "./VerificationScreen"
-import {ConfirmationScreen, ErrorDialog, LoadingDialog, SuccessDialog} from "./ConfirmationScreen"
+import {ConfirmationScreen} from "./ConfirmationScreen"
 import Venus from "./media/venus/Venus"
-import Logo from "./media/logo/Logo"
 
 const NecklaceBuilder = () => {
 

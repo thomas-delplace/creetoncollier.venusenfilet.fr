@@ -15,11 +15,12 @@ const ServerResProvider = ({children}) => {
 }
 
 const useServerResponse = () => {
+    const context = useContext(ServerResContext)
     try {
-        if(!useContext(ServerResContext)){
+        if(!context){
             throw new Error('useServerResponse must be called inside a ServerRes Provider')
         }
-        return useContext(ServerResContext)
+        return context
     } catch (error) {
         console.error(error)
     }

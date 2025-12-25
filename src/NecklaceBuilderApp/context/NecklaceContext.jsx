@@ -23,12 +23,12 @@ const NecklaceProvider = ({ children }) => {
 }
 
 const useNecklace = () => {
-
+    const context = useContext(NecklaceContext)
     try {
-        if(!useContext(NecklaceContext)){
+        if(!context){
             throw new Error('useNecklace must be called inside a Necklace Provider')
         }
-        return useContext(NecklaceContext)
+        return context
     } catch (error) {
         console.error(error)
     }

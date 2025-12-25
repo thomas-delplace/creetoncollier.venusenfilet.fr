@@ -1,4 +1,3 @@
-import css from './necklaceBuilder.module.css'
 import { PreviousButton, NextButton } from './layouts/buttons/buttons'
 import { useStep } from '../../context/StepContext'
 import settings from './settings'
@@ -21,7 +20,7 @@ const BeadScreen = () => {
     if(isMobile && !necklace.beadType){
       setBeads(beadTypes[0])
     }
-  }, [isMobile])
+  })
 
   const setBeads = (type) => {
     setNecklace((current) => ({ ...current, beadType: type.id }))
@@ -42,7 +41,7 @@ const BeadScreen = () => {
       setNecklace(current => ({ ...current, special: type.infos.special }))
     } else {
       if(necklace.message){ // if the message has already been set
-        const numberRegex = new RegExp('[*+-&$]', 'g')
+        const numberRegex = new RegExp('[-*+&$]', 'g')
         numberRegex.test(necklace.message) && setNecklace(current=>({ ...current, message:null})) // and has numbers, the message is reset
       }
       setNecklace(current => ({ ...current, numbers: false }))

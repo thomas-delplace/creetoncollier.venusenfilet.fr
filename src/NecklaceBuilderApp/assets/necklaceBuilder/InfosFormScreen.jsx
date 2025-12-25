@@ -19,7 +19,7 @@ const InfosFormScreen = () => {
     return mailRegex.test(string)
   }
   const isSafeName = (string) => {
-    const notSafeRegex = new RegExp('[^a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ" "\-]', 'gi')
+    const notSafeRegex = new RegExp('[^a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ" "-]', 'gi')
     return !notSafeRegex.test(string)
   }
 

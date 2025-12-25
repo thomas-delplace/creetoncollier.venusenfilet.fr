@@ -7,9 +7,9 @@ const Selector = ({items, onClick, className, innerRef}) => {
 
             <div ref={innerRef} className={css.selector}>
                 {
-                    items.map(item => (
+                    items.map((item,index) => (
                         item.active && (
-                            <div id={item.id}
+                            <div key={index} id={item.id}
                             role="button"
                             tabIndex={0}
                             onClick={() => {onClick(item)}}

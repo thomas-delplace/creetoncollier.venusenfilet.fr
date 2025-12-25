@@ -82,8 +82,8 @@ const Carousel = ({items, onClick, className}) => {
         <div ref={refCarousel} className={css.carouselContainer}>
             {
                 carouselOn && (
-                    <div Style="overflow:visible" className={`${css.carouselArrow} ${css.carouselLeftArrow}`} onClick={navigateLeft}>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" Style="overflow:visible">
+                    <div style={{overflow:"visible"}} className={`${css.carouselArrow} ${css.carouselLeftArrow}`} onClick={navigateLeft}>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" style={{overflow:"visible"}}>
                             <path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z" fill="#c08cbd"/>
                         </svg>
                     </div>

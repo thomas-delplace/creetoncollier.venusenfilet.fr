@@ -86,7 +86,7 @@ const NextButton = ({ visible }) => {
 const SubmitButton = () => {
 
   const { nextStep } = useStep()
-  const {serverResponse,setServerResponse} = useServerResponse()
+  const {setServerResponse} = useServerResponse()
   const data = useGatherData()
 
   const sendNecklace = async () => {
