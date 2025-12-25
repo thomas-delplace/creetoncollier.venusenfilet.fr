@@ -1,5 +1,6 @@
 {
-  "name": "api",
+  "name": "api.venusenfilet.fr",
+  "private":true,
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
