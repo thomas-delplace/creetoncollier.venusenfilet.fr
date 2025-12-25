@@ -1,0 +1,44 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "VenusMail",
+    "collectionId": "199589be-26ad-48a1-9c96-4cc8e90df368",
+    "dateExported": "2025-12-25T17:28:21.202Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c77c5848-6c0c-4600-932e-535860071faa",
+            "colId": "199589be-26ad-48a1-9c96-4cc8e90df368",
+            "containerId": "",
+            "name": "http://localhost:8080/necklace",
+            "url": "http://localhost:8080/necklace",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-12-25T17:28:02.707Z",
+            "modified": "2025-12-25T17:28:02.707Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"necklace\": {\n    \"beads\": \"perle nacrée\",\n    \"chain\": \"chaine dorée\",\n    \"message\": \"weeeeee\",\n    \"count\": 9\n  },\n  \"client\": {\n    \"mail\": \"mymail@myprovider.com\",\n    \"firstName\": \"Thomas\",\n    \"lastName\": \"Delplace\"\n  }\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "1Ju0Z1GwIlTFDVBBHHGRs6R3UmWnmVXPQwCmEmNp2drzdnAQWUHck81qgx1IkQKiflaVu-174TFDEJReF2jkKA"
+}
