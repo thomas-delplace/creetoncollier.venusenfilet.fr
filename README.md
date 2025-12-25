@@ -3,6 +3,7 @@
 ## Front
 
 React 18.3.1
+
 Vite 7.3.0
 
 ### Dependencies
@@ -11,6 +12,7 @@ Vite 7.3.0
 ## Back
 
 Node 24.11.1
+
 Express 4.20.0
 
 ### Dependencies
