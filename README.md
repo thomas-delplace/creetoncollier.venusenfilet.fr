@@ -1,8 +1,20 @@
-# React + Vite
+# NecklaceBuilder v1.1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Front
 
-Currently, two official plugins are available:
+React + Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Back
+
+Node + Express
+
+### Dependencies
+
+#### prod
+* [body-parser v1.20.3](https://www.npmjs.com/package/body-parser)
+* [cors v2.8.5](https://www.npmjs.com/package/cors) 
+* [dotenv v16.4.5](https://www.npmjs.com/package/dotenv)
+* [nodemailer v6.10.1](https://www.npmjs.com/package/nodemailer)
+
+#### dev
+* [nodemon v3.1.10](https://www.npmjs.com/package/nodemon)
