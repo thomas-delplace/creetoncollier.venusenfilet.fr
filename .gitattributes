@@ -17,6 +17,7 @@ Dockerfile text eol=lf
 
 # Configuration files
 *.env text eol=lf
+*.env.prod text eol=lf
 .gitignore text eol=lf
 .editorconfig text eol=lf
 .gitattributes text eol=lf
